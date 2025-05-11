@@ -25,7 +25,7 @@ message_counts = {}
 last_user = {}
 warned_users = {}
 
-SPECIAL_SPAWN_GROUP_ID = -1002643948280
+SPECIAL_SPAWN_GROUP_ID = -1002559156714
 
 for module_name in ALL_MODULES:
     importlib.import_module("shivu.modules." + module_name)
