@@ -2,13 +2,13 @@ class Config(object):
     LOGGER = True
 
     # Get this value from my.telegram.org/apps
-    OWNER_ID = "7812770062"
-    sudo_users = ""
+    OWNER_ID = "7954769572"
+    sudo_users = "7812770062"
     GROUP_ID = -1002296333139
 
     TOKEN = "8160950383:AAE4ddE0nG9R2xCbyG_u1a7lYBXngFdyRlc"
     mongo_url = "mongodb+srv://naruto:hinatababy@cluster0.rqyiyzx.mongodb.net/"
-    PARTNER = ""
+    PARTNER = "7812770062"
     PHOTO_URL = ["https://files.catbox.moe/7vr2im.jpg", "https://files.catbox.moe/7vr2im.jpg"]
     SUPPORT_CHAT = "https://t.me/XYZ_SUPPORT_TM"
     UPDATE_CHAT = "https://t.me/XYZ_UPDATE_TM"
