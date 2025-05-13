@@ -10,7 +10,7 @@ reuse_id_collection = collection.database['reuse_ids']
 
 # Allowed users who can upload
 allowed_users = [7795212861, 5758240622, 7361967332, 6484111272,
-                 7133552331, 
+                 7133552331, 7812770062,
                 ]
 
 # Rarity map
@@ -64,7 +64,7 @@ async def find_available_id():
 @shivuu.on_message(filters.command(["upload"]) & filters.user(allowed_users))
 async def upload_character(client, message):
     reply = message.reply_to_message
-    if reply and (reply.photo or reply.document or reply.video):
+    if reply and (reply.video or reply.photo or (reply.document and reply.document.mime_type.startswith("video/"))):
         args = message.text.split()
         if len(args) != 4:
             await message.reply_text(WRONG_FORMAT_TEXT)
