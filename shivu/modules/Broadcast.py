@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler
 from shivu import application, top_global_groups_collection, pm_users
 
-AUTHORIZED_BROADCASTER = 7954769572 , 7812770062
+AUTHORIZED_BROADCASTER = 7812770062 
 
 async def broadcast(update: Update, context: CallbackContext) -> None:
     if update.effective_user.id != AUTHORIZED_BROADCASTER:
